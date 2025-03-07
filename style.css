@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, gray, black);
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh; /* Garante que o gradiente cubra toda a tela */
+    margin: 0; /* Remove margens padrão do body */
+    overflow: hidden;
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: black 2px 2px 2px;
+    font-size: 3em;
+    margin: 50px;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-choices {
+    font-size: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btn-choices:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid white;
+}
+#resetScore{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset{
+    font-size: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+#reset:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+    color: white;
+    min-height: 135px;
+}
+#result span {
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
