@@ -9,17 +9,17 @@
 </head>
 <body>
     <h1>Rock Paper Scissor</h1>
-    <div id="result">
-    </div>
+    <div id="mode"></div>
+    <div id="result"></div>
     <div id="buttons">
-        <button class="btn-choices" onclick="main(0)">✊</button>
-        <button class="btn-choices" onclick="main(1)">✋</button>
-        <button class="btn-choices" onclick="main(2)">✌️</button>
+        <button class="btn-choices" id="rock-btn" onclick="main(0)">✊</button>
+        <button class="btn-choices" id="paper-btn" onclick="main(1)">✋</button>
+        <button class="btn-choices" id="scissors-btn" onclick="main(2)">✌️</button>
     </div>
-    <div id="resetScore">
+    <div id="more-options">
         <button id="reset" onclick="ResetScore()">Reset Score</button>
+        <button id="auto" onclick="AutoPlay()">Auto Play</button>
     </div>
-    <div id="score">
-    </div>
+    <div id="score"></div>
 </body>
 </html>

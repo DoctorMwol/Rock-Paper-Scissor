@@ -6,8 +6,8 @@
 body {
     background: linear-gradient(to right, gray, black);
     font-family: 'Courier New', Courier, monospace;
-    height: 100vh; /* Garante que o gradiente cubra toda a tela */
-    margin: 0; /* Remove margens padrão do body */
+    height: 100vh;
+    margin: 0;
     overflow: hidden;
 }
 h1 {
@@ -37,23 +37,45 @@ h1 {
     background-color: rgba(255, 255, 255, 0.6);
     border: 2px solid white;
 }
-#resetScore{
+.btn-choices:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+#more-options{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#reset{
+#reset, #auto{
     font-size: 30px;
     padding: 15px;
     border: none;
     border-radius: 10px;
     cursor:pointer;
     transition: 0.3s ease;
+    margin: 10px;
 }
-#reset:hover{
+#reset:hover, #auto:hover{
     background-color: rgba(255, 255, 255, 0.6);
 }
+
+#mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 10px;
+    color: white;
+}
+
+#mode p{
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
 #result{
     display: flex;
     justify-content: center;
